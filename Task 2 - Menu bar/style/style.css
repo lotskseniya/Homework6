@@ -1,0 +1,101 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main_page {
+  width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fdf9f9;
+}
+
+.main_page .navigation {
+  width: 11%;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  background: #8a8a8a;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
+.main_page .navigation .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main_page .navigation .menu ul li {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  color: white;
+}
+
+.main_page .navigation .menu ul li .menu_icon {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.main_page .navigation .menu ul li a {
+  text-decoration: none;
+  display: block;
+}
+
+.main_page .discription {
+  height: auto;
+  margin: 3% 8% 0 20%;
+  z-index: 2;
+  color: black;
+}
+
+.main_page .discription span {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.navigation:hover {
+  width: 25%;
+  z-index: 11;
+}
+
+.navigation:hover .edit::after {
+  content: "EDIT";
+  color: white;
+}
+
+.navigation:hover .favorites::after {
+  content: "FAVORITES";
+  color: white;
+}
+
+.navigation:hover .history::after {
+  content: "HISTORY";
+  color: white;
+}
+
+.navigation:hover .security::after {
+  content: "SECURITY";
+  color: white;
+}
+
+.navigation:hover .settings::after {
+  content: "SETTINGS";
+  color: white;
+}
+
+a:hover {
+  background-color: #605e5e;
+  color: white;
+  text-align: left;
+  padding-left: 20%;
+}
+/*# sourceMappingURL=style.css.map */

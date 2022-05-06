@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main_page {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    background: rgb(253, 249, 249);
+
+    .navigation {
+        width: 11%;
+        height: 100vh;
+        position: fixed;
+        z-index: 2;
+        background: #8a8a8a;
+        transition: width 1s ease-in-out;
+
+        .menu {
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: block;
+                align-content: center;
+
+                li {
+                    align-content: center;
+                    text-align: center;
+                    height: 80px;
+                    line-height: 80px;
+                    color: white;
+
+                    .menu_icon {
+                        width: 50px;
+                        height: 50px;
+                        vertical-align: middle;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .discription {
+        height: auto;
+        margin: 3% 8% 0 20%;
+        z-index: 2;
+        color: black;
+
+        span {
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.navigation:hover {
+    width: 25%;
+    z-index: 11;
+
+    .edit::after {
+        content: "EDIT";
+        color: white;
+    }
+
+    .favorites::after {
+        content: "FAVORITES";
+        color: white;
+    }
+
+    .history::after {
+        content: "HISTORY";
+        color: white;
+    }
+
+    .security::after {
+        content: "SECURITY";
+        color: white;
+    }
+
+    .settings::after {
+        content: "SETTINGS";
+        color: white;
+    }
+}
+
+a:hover {
+    background-color: #605e5e;
+    color: white;
+    text-align: left;
+    padding-left: 20%;
+}
