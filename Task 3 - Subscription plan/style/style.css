@@ -1,0 +1,154 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 35px 25px;
+  display: flex;
+  background: rgba(221, 216, 216, 0.699);
+}
+
+.option {
+  width: 250px;
+  height: 420px;
+  border-radius: 5%;
+  background: white;
+  transition: 0.35s;
+  margin: 40px 15px;
+  box-shadow: 0 0 4px 0px rgb(87, 86, 86);
+  position: relative;
+  display: block;
+  align-items: center;
+}
+
+.header {
+  position: relative;
+  z-index: 12;
+  margin-block-start: 6%;
+  margin-block-end: 5%;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2.0;
+}
+
+hr {
+  position: relative;
+  z-index: 12;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 100%;
+}
+
+#enterprise {
+  border-top: 3px solid rgb(199, 55, 86);
+}
+
+#professional {
+  border-top: 3px solid rgb(215, 145, 59);
+}
+
+#standard {
+  border-top: 3px solid rgb(43, 102, 137);
+}
+
+#basic {
+  border-top: 3px solid rgb(99, 187, 52);
+  ;
+}
+
+.price {
+  font-size: 50px;
+  font-weight: 700;
+  margin-block-start: 15px;
+  margin-block-end: 15px;
+}
+
+.periodity {
+  color: lightgray;
+  font-size: 16px;
+  font-weight: 700;
+  margin-block-start: 0;
+}
+
+.terms {
+  line-height: 2.0;
+  font-weight: 600;
+  margin-block-start: 15px;
+}
+
+.option p {
+  position: relative;
+  z-index: 12;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 12;
+  width: 100px;
+  height: 40px;
+  border-radius: 10%;
+  margin: 6% 30%;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.bt-red {
+  background-color: rgb(199, 55, 86);
+}
+
+.bt-orang {
+  background-color: rgb(215, 145, 59);
+}
+
+.bt-blue {
+  background-color: rgb(43, 102, 137);
+}
+
+.bt-green {
+  background-color: rgb(99, 187, 52);
+}
+
+.option:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  transition: 0.35s;
+  z-index: 10;
+  border-radius: 5%;
+  box-shadow: 0 0 5px 0px rgb(51 50 50);
+}
+
+.option:hover:after {
+  transform: scale(123.5%);
+  z-index: 11;
+}
+
+.option:hover #basic {
+  transform: scaleX(123.5%);
+}
+
+.option:hover #standard {
+  transform: scaleX(123.5%);
+}
+
+.option:hover #professional {
+  transform: scaleX(123.5%);
+}
+
+.option:hover #enterprise {
+  transform: scaleX(123.5%);
+}
